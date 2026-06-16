@@ -15,26 +15,6 @@ html {
     font-size: 100%;
 }
 
-div.container-row {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--bg-body);
-}
-
-div.project-header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: var(--bg-body);
-}
-
-div.projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: var(--bg-body);
-}
-
 body {
     margin: 0;
     font-family: "Roboto Slab", sans-serif;
@@ -44,12 +24,54 @@ body {
     line-height: var(--lh-body);
 }
 
-div.intro {
-    border-right: 1px solid var(--accent);
+/* Top header and menu */
+div.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-body);
+}
+
+div.header {
+    border-bottom: 1px solid var(--accent);
     background-color: var(--bg-container);
-    max-width: 200px;
-    margin-right: 20px;
+    text-align: center;
+}
+
+div.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+a:link {
+    color: var(--text2);
+    text-decoration: none;
     padding: 10px;
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+/* Projects */
+div.project-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--bg-body);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+div.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--bg-body);
 }
 
 div.project {
@@ -66,7 +88,7 @@ div.project {
 
 .project div.header {
     text-align: center;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-right: 5px;
 }
 
@@ -82,4 +104,18 @@ div.project {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+/* About */
+div.about {
+    background-color: var(--bg-container);
+    color: var(--text1);
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+    margin-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
