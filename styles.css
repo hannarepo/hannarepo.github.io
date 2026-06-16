@@ -1,5 +1,6 @@
 :root {
     --bg-body: hsl(0, 0%, 8%);
+    --bg-container: hsl(0, 0%, 14%);
     --hover: hsl(153, 59%, 37%);
     --text2 : hsl(0, 1%, 61%);
     --text1: hsl(0, 0%, 100%);
@@ -11,7 +12,7 @@
 html {
     display: flex;
     box-sizing: border-box;
-    font-size: 80%;
+    font-size: 100%;
 }
 
 div.container-row {
@@ -20,16 +21,18 @@ div.container-row {
     background-color: var(--bg-body);
 }
 
-div.container-column {
+div.project-header {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: var(--bg-body);
 }
 
-div.container-column-project {
+div.projects {
     display: flex;
-    flex-direction: column;
-    background-color: var(--);
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--bg-body);
 }
 
 body {
@@ -42,19 +45,19 @@ body {
 }
 
 div.intro {
-    max-width: 20%;
-    border-right: 1px solid hsl(0, 0%, 42%);
-    background-color: hsl(0, 0%, 14%);
+    max-width: 25%;
+    border-right: 1px solid var(--accent);
+    background-color: var(--bg-container);
     margin-right: 20px;
     padding: 10px;
 }
 
 div.project {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    border: 1px solid hsl(0, 0%, 42%);
-    border-radius: 5px;
-    background-color: hsl(0, 0%, 14%);
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    border: 1px solid var(--accent);
+    background-color: var(--bg-container);
     margin-left: 10px;
     margin-right: 20px;
     margin-top: 10px;
@@ -62,22 +65,21 @@ div.project {
 }
 
 .project div.header {
-    text-align: left;
+    text-align: center;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 .project div.content {
-    text-align: left;
+    text-align: center;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 .project img {
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    float: right;
 }
