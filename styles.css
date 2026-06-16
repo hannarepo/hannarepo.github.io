@@ -1,0 +1,35 @@
+:root {
+    --bg-body: hsl(0, 0%, 8%);
+    --hover: hsl(153, 59%, 37%);
+    --text2 : hsl(0, 1%, 61%);
+    --text1: hsl(0, 0%, 100%);
+    --accent: hsl(7, 94%, 58%);
+    --fs-body: 1.125rem;
+    --lh-body: 1.56;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto Slab", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text1);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+}
+
+div.intro {
+    max-width: 40%;
+    border: 1px solid hsl(0, 0%, 42%);
+    background-color: hsl(0, 0%, 14%);
+    position: relative;
+    left: 0px;
+}
