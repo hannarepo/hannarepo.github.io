@@ -47,7 +47,7 @@ body {
 div.intro {
     border-right: 1px solid var(--accent);
     background-color: var(--bg-container);
-    max-width: 150px;
+    max-width: 200px;
     margin-right: 20px;
     padding: 10px;
 }
