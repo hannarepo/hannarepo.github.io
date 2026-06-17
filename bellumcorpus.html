@@ -7,54 +7,111 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link 
-     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
-     rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d92d38d70.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 
     <title>Bellum Corpus</title>
 </head>
 
 <body>
-    <!-- Top header and menu -->
-    <header>
-        <h1 id="top">Bellum Corpus</h1>
-        <div class="menu">
-            <a href="index.html">Back</a>
-        </div>
-    </header>
-
-    <div class="project-description">
-        <div class="text">
-            <p>Prototype turn-based strategy game where you control mutated human weapons on their path to
-                destroy their creators.
-            </p>
-        </div>
-        <figure>
-            <img src="Assets/Images/bellumcorpus4.png" alt="Screenshot of the game." style="width: 100%";>
-            <figcaption>Gameplay from Bellum Corpus.</figcaption>
-        </figure>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About me</a>
+        <a href="https://www.linkedin.com/in/hanna-repo-9344302a0/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/hannarepo"><i class="fa-brands fa-github"></i></a>
+        <a href="https://reponami.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
     </div>
 
-    <div class="project-description">
-        <div class="text">
-            <h2>Responsibilities</h2>
+    <div class="top-arrow">
+        <a href="#top"><i class="fa-solid fa-circle-chevron-up fa-2xl"></i></i></a>
+    </div>
+
+    <!-- Top header -->
+    <header>
+        <h1 id="top">Bellum Corpus</h1>
+    </header>
+
+    <div class="row">    
+        <!-- Basic info -->
+        <div class="project-description">
+            <div class="text-block">
+                <p>Prototype turn-based strategy game where you control mutated human weapons on their path to
+                    destroy their creators.
+                </p>
+            </div>
+            <figure>
+                <img src="Assets/Images/bellumcorpus4.png" alt="Screenshot of the game." style="width: 100%";>
+                <figcaption>Gameplay from Bellum Corpus.</figcaption>
+            </figure>
+
+            <div class="text-block">
+                <p>
+                    Created in: <span style="color: hsl(29, 100%, 42%);">2025</span>
+                    <br>Platform: <i class="fa-brands fa-windows"></i> <span style="color: hsl(29, 100%, 42%);">Windows</span>
+                    <br>Engine: <i class="fa-brands fa-unity"></i> <span style="color: hsl(29, 100%, 42%);">Unity</span>
+                </p>
+            </div>
+
+            <!-- Responsibilities -->
+            <div class="text-block">
+                <h2>My responsibilities</h2>
+                    <div class="list">
+                    <li>Turn system</li>
+                    <li>Enemy AI</li>
+                    <li>Grid movement and pathfinding</li>
+                    <li>Camera</li>
+                    <li>Line of sight and accuracy calculation</li>
+                </div>
+            </div>
+            <figure>
+                <img src="Assets/Images/bellumcorpus2.png" alt="Screenshot of the game.">
+                <figcaption>Attack action with accuracy shown on target info in bottom right corner.</figcaption>
+            </figure>
+
+            <!--Project description -->
+            <div class="text-block">
+                <h2>Project</h2>
+                <p>
+                    Bellum Corpus is a prototype turn-based strategy game where the player controls mutated human weapons that
+                    have turned on their former allies.
+                    <br>
+                    <br>The project is built with Unity 6 High Definition Render Pipeline (HDRP).
+                    <br>
+                    <br>In this project my main responsibilities were:
+                </p>
+                    <div class="list">
+                        <li>Implementing the turn system</li>
+                        <li>Implementing pathfinding and unit movement on hexagonal grid (grid created by Lassi Ahonen)</li>
+                        <li>Implementing camera controls</li>
+                        <li>Line of sight including supercover line and accuracy calculations</li>
+                    </div>
+                <h2>Key features</h2>
                 <div class="list">
-                <li>Turn system</li>
-                <li>Enemy AI</li>
-                <li>Grid movement and pathfinding</li>
-                <li>Camera</li>
-                <li>Line of sight and accuracy calculation</li>
+                    <li>Hexagonal terrain</li>
+                    <li>Turn-based</li>
+                    <li>Enemies with basic AI and personalities</li>
+                    <li>Cover mechanics using line of sight</li>
+                </div>
+            </div>
+
+            <!-- Enemy AI -->
+            <div class="text-block">
+                <h2>Enemy AI</h2>
+                <p>I created the enemy AI using Unity's Behaviour package. Unity Bheaviour is a graphical tool and it's based on 
+                    behaviour trees. In addition to the premade nodes and functionality, you can create your own nodes with C#.</p>
+            </div>
+
+            <div class="text-block">
+                <h2>Give it a go</h2>
+
             </div>
         </div>
-        <figure>
-            <img src="Assets/Images/bellumcorpus2.png" alt="Screenshot of the game.">
-            <figcaption></figcaption>
-        </figure>
     </div>
 
     <footer>
-        <a href="#top">Back to top</a>
-        <a href="index.html">Back to home</a>
         <p>&copy 2026 Hanna Repo</p>
     </footer>
 </body>

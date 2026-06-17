@@ -1,10 +1,12 @@
 :root {
-    --bg-body: hsl(0, 0%, 6%);
-    --bg-container: hsl(105, 7%, 11%);
-    --hover: hsl(211, 14%, 32%);
-    --text2 : hsl(0, 1%, 61%);
-    --text1: hsl(0, 0%, 100%);
-    --border: hsl(0, 2%, 71%);
+    --bg-body: rgb(15, 15, 15);
+    --bg-container: rgb(27, 30, 26);
+    --hover: rgb(70, 81, 93);
+    --text1: rgb(255, 255, 255);
+    --text2: rgb(157, 155, 155);
+    --text-highlight: rgb(214, 104, 0);
+    --border: rgb(183, 180, 180);
+    --border-opaque: rgba(183, 180, 180, 0.5);
     --fs-body: 100%;
     --lh-body: 1.56;
 }
@@ -23,8 +25,13 @@ body {
     line-height: var(--lh-body);
 }
 
+h2 {
+    font-weight: 400;
+}
+
 p {
   word-wrap: break-word;
+  font-weight: 200;
 }
 
 figure {
@@ -35,28 +42,50 @@ figure {
 
 /* Responsive layout */
 @media screen and (max-width: 700px) {
-    .container, .menu {
+    .container, .menu, .row {
         flex-direction: column;
     }
+}   
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--bg-body);
+    border-right: 1px solid var(--border-opaque);
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid var(--border-opaque);
+    border-bottom: 1px solid var(--border-opaque); */
+    padding: 10px;
+    background-color: var(--bg-body);
+    overflow-x: hidden;
 }
 
 /* Top header and menu */
 header {
-    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg-container);
     text-align: center;
     padding: 10px;
 }
 
-div.menu {
+.menu {
+    position: sticky;
+    width: 100%;
+    top: 0;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    height: 50px;
     justify-content: center;
-    align-items: center;
+    background-color: var(--bg-container);
+    border-bottom: 1px solid var(--border-opaque);
 }
 
+/* Links */
 a:link {
     color: var(--text2);
     text-decoration: none;
@@ -69,6 +98,30 @@ a:hover {
 
 a:visited {
     color: var(--text2);
+}
+
+.top-arrow {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Row and columns */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    padding: 10px;
+}   
+
+.column.middle {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Projects */
@@ -94,7 +147,7 @@ div.project-header {
     display: flex;
     max-width: 300px;
     flex-direction: column;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-opaque);
     background-color: var(--bg-container);
     color: var(--text1);
     margin: 10px;
@@ -113,33 +166,33 @@ div.project-header {
 
 /* About */
 div.about {
-    background-color: var(--bg-container);
+    /* background-color: var(--bg-container); */
     color: var(--text1);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    margin-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
+    border-top: 1px solid var(--border-opaque);
+    border-bottom: 1px solid var(--border-opaque);
+    margin: 30px;
     text-align: center;
+    padding: 20px;
 }
 
 /* Project page */
 div.project-description {
     display: flex;
     flex-direction: column;
-    border-left: 1px solid var(--border);
-    border-right: 1px solid var(--border);
     margin-left: 170px;
     margin-right: 170px;
 }
 
-.project-description div.text {
+.project-description div.text-block {
     padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid var(--border-opaque);
 }
 
 .project-description div.list {
     padding-left: 20px;
+    font-weight: 200;
 }
 
 img {
@@ -147,18 +200,12 @@ img {
     height: auto;
 }
 
+/* Footer */
 footer {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--border-opaque);
     background-color: var(--bg-container);
     text-align: center;
-    margin-top: 20px;
     padding: 10px;
-    
-}
-
-footer p {
     font-size: 70%;
     color: var(--text2);
 }
