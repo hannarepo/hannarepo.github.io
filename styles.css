@@ -1,16 +1,15 @@
 :root {
-    --bg-body: hsl(0, 0%, 8%);
-    --bg-container: hsl(0, 0%, 14%);
-    --hover: hsl(154, 14%, 44%);
+    --bg-body: hsl(0, 0%, 6%);
+    --bg-container: hsl(105, 7%, 11%);
+    --hover: hsl(211, 14%, 32%);
     --text2 : hsl(0, 1%, 61%);
     --text1: hsl(0, 0%, 100%);
-    --accent: hsl(7, 94%, 58%);
+    --border: hsl(0, 2%, 71%);
     --fs-body: 100%;
     --lh-body: 1.56;
 }
 
 html {
-    display: flex;
     box-sizing: border-box;
     font-size: 100%;
 }
@@ -24,17 +23,29 @@ body {
     line-height: var(--lh-body);
 }
 
-/* Top header and menu */
-div.container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg-body);
+p {
+  word-wrap: break-word;
 }
 
-div.header {
-    border-bottom: 1px solid var(--accent);
+figure {
+    font-size: 80%;
+    color: var(--text2);
+    text-align: center;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 700px) {
+    .container, .menu {
+        flex-direction: column;
+    }
+}
+
+/* Top header and menu */
+header {
+    border-bottom: 1px solid var(--border);
     background-color: var(--bg-container);
     text-align: center;
+    padding: 10px;
 }
 
 div.menu {
@@ -53,7 +64,11 @@ a:link {
 }
 
 a:hover {
-    color: var(--hover);
+    color: var(--hover) !important;
+}
+
+a:visited {
+    color: var(--text2);
 }
 
 /* Projects */
@@ -67,55 +82,83 @@ div.project-header {
     text-align: center;
 }
 
-div.projects {
+.cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: var(--bg-body);
 }
 
-div.project {
+.card {
     display: flex;
     max-width: 300px;
     flex-direction: column;
-    border: 1px solid var(--accent);
+    border: 1px solid var(--border);
     background-color: var(--bg-container);
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    color: var(--text1);
+    margin: 10px;
 }
 
-.project div.header {
+.card-header1 {
     text-align: center;
-    padding-left: 10px;
-    padding-right: 5px;
 }
 
-.project div.content {
+.card-content {
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
+    color: var(--text1);
 }
-
-.project img {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 
 /* About */
 div.about {
     background-color: var(--bg-container);
     color: var(--text1);
-    border-top: 1px solid var(--accent);
-    border-bottom: 1px solid var(--accent);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     margin-top: 30px;
     padding-bottom: 30px;
-    text-align: center;
     padding-left: 40px;
     padding-right: 40px;
+    text-align: center;
+}
+
+/* Project page */
+div.project-description {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+.project-description div.text {
+    padding-left: 50px;
+}
+
+.project-description div.list {
+    padding-left: 20px;
+}
+
+img {
+    max-width: 900px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--border);
+    background-color: var(--bg-container);
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+
+footer p {
+    font-size: 70%;
+    color: var(--text2);
 }
