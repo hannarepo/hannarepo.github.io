@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/3d92d38d70.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 
-    <title>Bellum Corpus</title>
+    <title>Feast Or Famine</title>
 </head>
 
 <body>
@@ -41,8 +41,99 @@
         </nav>
     </div>
 
-    <div class="text-block">
-        <p>Content coming soon</p>
+    <div class="row">    
+        <!-- Basic info -->
+        <div class="project-description">
+            <div class="text-block">
+                <p>A third person resrource gathering game with melee combat, light survival elements and a fishing minigame.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I0DusoLsqt4?si=woDrJKPbwAGBsrQd" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                 gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <figure>
+                <!-- <img src="Assets/Images/bellumcorpus4.png" alt="Screenshot of the game." style="width: 100%";> -->
+                <figcaption>Gameplay from Feast Or Famine.</figcaption>
+            </figure>
+
+            <div class="text-block">
+                <p>
+                    Created in: <span style="color: hsl(29, 100%, 42%);">2025</span>
+                    <br>Platform: <i class="fa-brands fa-windows"></i> <span style="color: hsl(29, 100%, 42%);">Windows</span>
+                    <br>Engine: <i class="fa-brands fa-unity"></i> <span style="color: hsl(29, 100%, 42%);">Unity</span>
+                </p>
+            </div>
+
+            <!-- Responsibilities -->
+            <div class="text-block">
+                <h2>My responsibilities</h2>
+                    <div class="list">
+                    <li>Code lead</li>
+                    <li>Player mechanics</li>
+                    <li>Enemy functionality</li>
+                    <li>Villager wandering</li>
+                    <li>Camera</li>
+                    <li>Level design</li>
+                </div>
+            </div>
+            <figure>
+                <!-- <img src="Assets/Images/bellumcorpus2.png" alt="Screenshot of the game."> -->
+                <figcaption></figcaption>
+            </figure>
+
+            <!--Project description -->
+            <div class="text-block">
+                <h2>Project</h2>
+                <p>
+                    Feast Or Famine is a small third person game where the player tries to keep the villagers alive and working the
+                    field by going to gather food from the forest by killing enemies and fishing.
+                    <br>
+                    <br>The project is built with Unity 6 Universal Render Pipeline (URP).
+                    <br>    
+                    <br>In this project my main responsibilities were:
+                </p>
+                    <div class="list">
+                        <li>Leading code direction and structure and keeping track of the progress of the project</li>
+                        <li>Implementing player mechanics</li>
+                        <li>Implementing camera controls</li>
+                        <li>Implementing enemy behaviour and functionality</li>
+                        <li>Implementing villager wandering</li>
+                    </div>
+                <h2>Key features</h2>
+                <div class="list">
+                    <li>Melee combat</li>
+                    <li>Resource management</li>
+                    <li>Enemies with basic AI</li>
+                    <li>Fishing minigame</li>
+                </div>
+            </div>
+
+            <!-- Player mechanics -->
+            <div class="text-block">
+                <h2>Player and enemies</h2>
+                <p>
+                    I implemented the player mechanics with a hierarchical state machine. The player can walk, run, do a swipe
+                    attack and a dodge roll.
+                </p>
+                <figure>
+                    <!-- <img src="Assets/Images/behaviour.png">
+                    <figcaption>One behaviour graph in its entirety.</figcaption> -->
+                </figure>
+                <p>There are two types of enemies, a  wild boar and a large plant. The boar charges the player and has a small
+                    tired time after the charge. The charge knocks the player back on hit.
+                    <br>The plant enemy cannot move other than rotate slowly to try and face the player. It has two types of attacks,
+                    a swipe attack and an overhead between which it will choose based on player proximity and direction.
+                </p>
+            </div>
+
+            <div class="text-block">
+                <h2>Give it a try</h2>
+                <iframe height="167" width="552" src="https://itch.io/embed/3544282" frameborder="0">
+                    <a href="https://reponami.itch.io/feast-or-famine">Feast or Famine by reponami, anjubatus, Insomnian, 
+                        ou6h, SadFrogzz, Abramide, hozelot</a></iframe>
+            </div>
+        </div>
     </div>
 
     <footer>

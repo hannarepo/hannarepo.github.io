@@ -40,6 +40,21 @@ figure {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 90%;
+    height: auto;
+    align-self: center;
+}
+
+iframe {
+    background-color: var(--bg-container);
+}
+
 /* Top header and menu */
 header {
     display: flex;
@@ -182,7 +197,7 @@ div.project-description {
     display: flex;
     flex-direction: column;
     margin-left: 170px;
-    margin-right: 170px;    
+    margin-right: 170px;
 }
 
 .project-description div.text-block {
@@ -197,9 +212,10 @@ div.project-description {
     font-weight: 200;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.project-description div.card {
+    display: flex;
+    flex-direction: row;
+
 }
 
 /* Footer */
@@ -213,24 +229,21 @@ footer {
 }
 
 /* Responsive layout */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .container, .menu, .row {
         flex-direction: column;
     }
+
     div.project-description {
         margin-left: 0px;
         margin-right: 0px;
     }
+
     .project-description div.text-block {
         padding-left: 5px;
         padding-right: 5px;
     }
-    img {
-        max-width: 100%;
-    }
-}
 
-@media screen and (max-width: 600px) {
     .menu {
         flex-direction: column;
         align-items: center;
