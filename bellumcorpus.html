@@ -25,12 +25,20 @@
     </header>
 
     <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#about">About me</a>
-        <a href="https://www.linkedin.com/in/hanna-repo-9344302a0/"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/hannarepo"><i class="fa-brands fa-github"></i></a>
-        <a href="https://reponami.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#about">About me</a>
+            <a href="https://www.linkedin.com/in/hanna-repo-9344302a0/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/hannarepo"><i class="fa-brands fa-github"></i></a>
+            <a href="https://reponami.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+        </nav>
     </div>
 
     <div class="row">    
@@ -113,5 +121,13 @@
     <footer>
         <p>&copy 2026 Hanna Repo</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.menu-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
+    </script>
 </body>
 </html>
