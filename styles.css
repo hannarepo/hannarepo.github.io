@@ -162,6 +162,10 @@ div.project-header {
     color: var(--text1);
 }
 
+.card:hover .card-content {
+    color: var(--hover);
+}
+
 /* About */
 div.about {
     /* background-color: var(--bg-container); */
