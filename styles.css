@@ -53,6 +53,7 @@ video {
 
 iframe {
     background-color: var(--bg-container);
+    max-width: 100%;
 }
 
 /* Top header and menu */
@@ -212,12 +213,6 @@ div.project-description {
     font-weight: 200;
 }
 
-.project-description div.card {
-    display: flex;
-    flex-direction: row;
-
-}
-
 /* Footer */
 footer {
     border-top: 1px solid var(--border-opaque);
@@ -229,14 +224,26 @@ footer {
 }
 
 /* Responsive layout */
+@media screen and (max-width: 800px){
+    div.project-description {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .project-description div.text-block {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .container, .menu, .row {
         flex-direction: column;
     }
 
     div.project-description {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .project-description div.text-block {
