@@ -81,20 +81,16 @@
             <div class="text-block">
                 <h2>Project</h2>
                 <p>
-                    Feast Or Famine is a small third person game where the player tries to keep the villagers alive and working the
-                    field by gathering food from the forest by killing enemies and fishing.
-                    <br>
-                    <br>The project is built with Unity 6 Universal Render Pipeline (URP).
+                    Feast Or Famine is a small third-person resource gathering game built in Unity 6 URP for 
+                    Windows. The player keeps villagers alive and working the fields by gathering food from the 
+                    forest through combat and fishing, while managing light survival elements.
                     <br>    
-                    <br>In this project my main responsibilities were:
+                    <br>In this project, I worked as code lead and was responsible for guiding code structure, 
+                    tracking programming progress, and implementing several core gameplay systems. My main 
+                    responsibilities included player mechanics, enemy functionality, villager wandering, camera 
+                    controls, and level design. My work focused on building the gameplay systems that support 
+                    combat, exploration, and the game’s core resource-gathering loop.
                 </p>
-                    <div class="list">
-                        <li>Leading code direction and structure and keeping track of the progress of the project</li>
-                        <li>Implementing player mechanics</li>
-                        <li>Implementing camera controls</li>
-                        <li>Implementing enemy behaviour and functionality</li>
-                        <li>Implementing villager wandering</li>
-                    </div>
                 <h2>Key features</h2>
                 <div class="list">
                     <li>Melee combat</li>
@@ -108,8 +104,9 @@
             <div class="text-block">
                 <h2>Player and enemies</h2>
                 <p>
-                    I implemented the player mechanics with a hierarchical state machine. The player can walk, run, swipe and thrust
-                    attack and dodge roll.
+                    I implemented the player character using a hierarchical state machine. The player can walk, 
+                    run, perform swipe and thrust attacks, and dodge roll, with the state-based structure helping 
+                    keep the character logic organized and easier to expand.
                 </p>
                 <figure>
                     <video width="600px" controls autoplay>
@@ -117,13 +114,12 @@
                     </video>
                     <figcaption>Player dodge roll as boar charges towards player.</figcaption>
                 </figure>
-                <p>There are two types of enemies, a  wild boar and a large plant. The boar has a set path with waypoints that
-                    it will patrol on and will detect player when they are within the boar's aggro range and vision cone.
-                    The boar has a charge attack where it will charge towards the player and is briefly  exhausted after. 
-                    <br>
-                    <br>The plant enemy cannot move other than rotate slowly to face the player. It has two types of attacks,
-                    a swipe attack and an overhead between which it will choose based on player proximity and direction.
-                    The enemies are also implemented with a hierarchical state machine.
+                <p>I also implemented two enemy types using hierarchical state machines. The wild boar patrols 
+                    along waypoint routes, detects the player through aggro range and vision cone checks, and 
+                    uses a charge attack followed by a short exhaustion period.
+                    <br>The plant enemy remains stationary apart from rotating to face the player, and selects 
+                    between two attacks based on the player's proximity and direction. In addition, I 
+                    implemented villager wandering behavior with waypoint routes and camera controls.
                 </p>
                 <figure>
                     <img src="Assets/Images/feastorfamine1.png">

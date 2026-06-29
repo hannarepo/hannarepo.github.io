@@ -80,19 +80,17 @@
             <div class="text-block">
                 <h2>Project</h2>
                 <p>
-                    Memo Bubble is a short 2D platformer in the style of Bubble Bobble. The game has three different worlds and 
-                    each world has 11 levels.
+                    Memo Bubble is a short 2D platformer built in Unity 2022 URP for Windows, inspired by the 
+                    arcade classic Bubble Bobble and styled with early-2000s aesthetics. The game includes 
+                    three worlds with 11 levels each, focusing on platforming, score chasing, and power-up-driven 
+                    gameplay.
                     <br>
-                    <br>The project is built with Unity 2022 Universal Render Pipeline (URP).
-                    <br>
-                    <br>In this project my main responsibilities were:
+                    <br>My main responsibilities in the project included player mechanics, item collection, 
+                    shop and power-up systems, Hurry Up mechanics, point effects, and the undefeatable enemy 
+                    functionality. I focused on implementing gameplay systems that support fast-paced movement 
+                    and increasing pressure during each level.
                 </p>
-                    <div class="list">
-                        <li>Implementing player mechanics</li>
-                        <li>Implementing item collection, shop and power-ups</li>
-                        <li>Implementing undefeatable enemy functionality</li>
-                        <li>Implementing Hurry up! mechanics</li>
-                    </div>
+
                 <h2>Key features</h2>
                 <div class="list">
                     <li>Platforming</li>
@@ -105,28 +103,26 @@
              <div class="text-block">
                 <h2>Player mechanics</h2>
                 <p>
-                    The player has similar functionality as in the old Bubble Bobble versions such as jumping, shooting bubbles and 
-                    popping them, but Memo Bubble has some added bonuses. Unlike in the classic Bubble Bobble, the player can 
-                    drop down through platforms and the movement is faster and more responsive.
+                    I implemented player controls inspired by classic Bubble Bobble, including jumping, shooting 
+                    bubbles, and popping trapped enemies, while also adding more responsive movement and the 
+                    ability to drop through platforms. I also built the item collection and shop systems, 
+                    allowing players to use collected points to buy power-ups such as movement speed and bubble 
+                    size upgrades.
                     <figure>
                         <img src="Assets/Images/memobubble_tutorial.png">
                         <figcaption>Gameplay from Memo Bubble.</figcaption>
                     </figure>
 
-                    Just as in the classic, the player can get power-ups with various effects such as movement speed 
-                    and bubble size increase, but unlike in the classic 
-                    I implemented a shop where the player can buy the power-ups with collected points any time. The is also the 
-                    rarely appearing Umbrella that let's the player skip levels.
                     <figure>
                         <img src="Assets/Images/memobubble_shop.png">
                         <figcaption>Power-up shop.</figcaption>
                     </figure>
 
-                    I also implemented the Hurry up! mechanics familiar from the classic Bubble Bobble. If the player spends too 
-                    much time in one level, the music speeds up, a Hurry up! prompt is displayed and the enemies get faster. 
-                    If the player still stays on the level for a while, an undefeatable enemy appers. The enemy will constantly 
-                    chase the player, ignore all collisions and it cannot be trapped in a bubble and killed. Once the undefeatable 
-                    enemy reaches the player, one life is lost and the player is respawned.
+                    In addition, I implemented the Hurry Up mechanic familiar from the original game. If the 
+                    player spends too long on a level, the music speeds up, a warning prompt appears, enemies 
+                    become faster, and eventually an undefeatable enemy spawns to chase the player. This enemy 
+                    ignores collisions, cannot be trapped or defeated, and forces the player to keep moving by 
+                    causing a life loss on contact.
                     <figure>
                         <img src="Assets/Images/memobubble_hurryup.png">
                         <figcaption>Hurry Up! and undefeatable enemy (bin).</figcaption>

@@ -48,9 +48,6 @@
                 <p>Prototype turn-based strategy game where you control mutated human weapons on their path to
                     destroy their creators.
                 </p>
-                <!-- <video controls>
-                    <source src="Assets/Videos/bellumcorpus.mp4" type="video/mp4">
-                </video> -->
             </div>
             <figure>
                 <img src="Assets/Images/bellumcorpus4.png" alt="Screenshot of the game." style="width: 100%";>
@@ -85,19 +82,28 @@
             <div class="text-block">
                 <h2>Project</h2>
                 <p>
-                    Bellum Corpus is a prototype turn-based strategy game where the player controls mutated human weapons that
-                    have turned on their former allies.
+                    Bellum Corpus is a prototype turn-based strategy game built in Unity 6 HDRP for Windows, 
+                    where the player controls mutated human weapons that have turned on their former allies.
                     <br>
                     <br>The project is built with Unity 6 High Definition Render Pipeline (HDRP).
                     <br>
-                    <br>In this project my main responsibilities were:
+                    <br>My main responsibilities in the project included the turn system, enemy AI, hex-grid 
+                    movement and pathfinding, camera controls, and line-of-sight and accuracy calculations. 
+                    I focused on implementing the core gameplay systems that connect tactical movement, combat, 
+                    and enemy decision-making.
+                    <br>
+                    <br> The hex grid system itself was created by a teammate. I used its existing grid 
+                    calculations to implement unit movement and to build gameplay systems around it, including 
+                    line-of-sight logic with supercover line checks to support cover mechanics and accuracy 
+                    calculations. These systems helped create more tactical combat encounters and clearer 
+                    gameplay feedback.
                 </p>
-                    <div class="list">
+                    <!-- <div class="list">
                         <li>Implementing the turn system</li>
                         <li>Implementing pathfinding and unit movement on hexagonal grid (grid created by Lassi Ahonen)</li>
                         <li>Implementing camera controls</li>
                         <li>Line of sight including supercover line and accuracy calculations</li>
-                    </div>
+                    </div> -->
                 <h2>Key features</h2>
                 <div class="list">
                     <li>Hexagonal terrain</li>
@@ -110,11 +116,11 @@
             <!-- Enemy AI -->
             <div class="text-block">
                 <h2>Enemy AI</h2>
-                <p>I created the enemy AI using Unity's Behavior package. Unity Behavior is a graphical tool and it's based on 
-                    behaviour trees. In addition to the premade nodes and functionality, you can create your own nodes with C#.
-                    <br>I created three different enemy types that prioritize different target types. One prioritizes player units
-                    it has the highest accuracy to, another targets units with lowest HP and as a fun side personality I made one
-                    enemy type focus only on a single target and hunt it relentlessly.
+                <p>For enemy AI, I used Unity Behavior, a behavior tree-based visual tool, and extended it with 
+                    custom C# nodes when needed. I created three enemy types with different targeting behaviors: 
+                    one prioritizes targets with the highest hit probability, one focuses on the lowest-HP units, 
+                    and one relentlessly hunts a single selected target. This gave enemies distinct personalities 
+                    and could make encounters feel more varied.
                 </p>
                 <figure>
                     <img src="Assets/Images/behaviour.png">
